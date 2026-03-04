@@ -20,6 +20,18 @@ bunx vitest path/to/file.test.tsx
 
 > **Note:** `bun test` invokes Bun's native runner and will fail — always use `bun run test`.
 
+## Git Workflow
+
+Always use a branch-based workflow:
+
+1. Create a branch: `git checkout -b <type>/<short-description>` (e.g. `feat/add-login`, `fix/header-overlap`, `chore/update-deps`) — keep branches short-lived and scoped to a single change
+2. Stage changes: `git add .`
+3. Commit: `git commit -m "<message>"`
+4. Push: `git push -u origin <branch-name>`
+5. Open a PR: `gh pr create`
+
+Never commit directly to `main`.
+
 ## Architecture
 
 This is a **Next.js 16 App Router** project with TypeScript, React 19, and Tailwind CSS v4.
