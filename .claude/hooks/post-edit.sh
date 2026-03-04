@@ -4,7 +4,7 @@
 
 file=$(jq -r '.tool_input.file_path')
 
-[[ "$file" == *.py ]] || exit 0
+[[ "$file" == *.ts || "$file" == *.tsx || "$file" == *.js || "$file" == *.jsx ]] || exit 0
 
 echo "--- format ---"
 bun run format "$file"
