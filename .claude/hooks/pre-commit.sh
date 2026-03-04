@@ -19,3 +19,9 @@ if ! bun run lint:fix; then
   echo "bun run lint:fix found unfixable errors" >&2
   exit 2
 fi
+
+echo "--- typecheck ---"
+if ! bun run typecheck; then
+  echo "bun run typecheck failed" >&2
+  exit 2
+fi
