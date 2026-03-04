@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org) (v20+)
+- [Bun](https://bun.sh)
+- [GitHub CLI](https://cli.github.com) (`gh`)
+- [jq](https://jqlang.org) (used by Claude Code hooks)
+
 ## Getting Started
 
 First, run the development server:
